@@ -1,0 +1,24 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.dance-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.dance-alorithm-img {
+  display: block;
+  margin: auto;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+  text-align: center;
+}

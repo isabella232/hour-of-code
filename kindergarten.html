@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dance Algorithm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div id="imgModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p id="modalImg"></p>
+            <div class="progress">
+              <div id="progress-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">40% Complete (success)</span></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="pause();"><img src="img/svg/media-pause.svg"></button>
+            <button type="button" class="btn btn-primary" onclick="runDanceAlgorithm();"><img src="img/svg/media-play.svg"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/kindergarten/main.js"></script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+      <div class="container col-centered">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Dance Algorithm Generator</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="width: auto;">
+      <div class="row">
+        <div class="col-md-9 col-centered">
+          <h3>Dance Moves</h3>
+          <img id="img1" src="img/kindergarten/download.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img2" src="img/kindergarten/download.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img3" src="img/kindergarten/images.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img4" src="img/kindergarten/images.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img5" src="img/kindergarten/thriller.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img6" src="img/kindergarten/balletboy.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img7" src="img/kindergarten/balletgirl.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img8" src="img/kindergarten/batman.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img9" src="img/kindergarten/charlie.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img10" src="img/kindergarten/croc.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img11" src="img/kindergarten/dance.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img12" src="img/kindergarten/disco.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img13" src="img/kindergarten/egyptian.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img14" src="img/kindergarten/fists.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img15" src="img/kindergarten/giraffes.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img16" src="img/kindergarten/goofy.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img17" src="img/kindergarten/images.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img18" src="img/kindergarten/images.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img19" src="img/kindergarten/jive.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img20" src="img/kindergarten/jump.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img21" src="img/kindergarten/leg.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img22" src="img/kindergarten/minnie.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img23" src="img/kindergarten/monkey.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img24" src="img/kindergarten/potato.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img25" src="img/kindergarten/reach.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img26" src="img/kindergarten/spiderman.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img27" src="img/kindergarten/squat.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img28" src="img/kindergarten/taco.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img29" src="img/kindergarten/thriller.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img30" src="img/kindergarten/toes.jpeg" class="dance-img" onclick="clickImage(this);" />
+          <img id="img31" src="img/kindergarten/twohands.png" class="dance-img" onclick="clickImage(this);" />
+          <img id="img32" src="img/kindergarten/shuffle.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img33" src="img/kindergarten/flap.gif" class="dance-img" onclick="clickImage(this);" />
+          <img id="img34" src="img/kindergarten/pet.gif" class="dance-img" onclick="clickImage(this);" />
+
+        </div>
+        <div class="col-md-3 col-centered">
+          <h3>Dance Algorithm</h3>
+          <button class="btn btn-xs btn-info" type="submit" onclick="clearDanceAlgorithm();">Clear</button>
+          <br/><br />
+          <button class="btn btn btn-danger" type="submit" onclick="runDanceAlgorithm();">START</button>
+          <br /><br />
+          <div id="dance-routine">
+          </div>
+          <br />
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+
+</html>
